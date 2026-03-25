@@ -1,5 +1,5 @@
-from services.database import engine, Base, session_factory
-from services.models import Song, User
+from .database import engine, Base, session_factory
+from .models import Song, User
 
 
 class ORM:
