@@ -1,0 +1,216 @@
+.h-txt{
+    font-family: Copperplate Gothic Light;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff, 0 0 80px #fff;
+}
+
+.p-txt{
+    font-family: Copperplate Gothic Light;
+    text-align: center;
+    color: #c3513d;
+    font-size: 20px;
+    margin-top:10px;
+    text-align:left;
+}
+
+.div-main{
+    background-color: #43297f;
+    width: 800px;
+    border-radius: 30px;
+
+}
+.div-song{
+    background-color: #e0b34d;
+    width: 600px;
+    border-radius: 10px;
+    margin-left: 110px;
+    border: 3px solid transparent;
+    transition: border-color 0.3s;
+    text-decoration:none
+}
+.button-delete{
+    width: 100px;
+    height:30px;
+    text-decoration:none;
+    background-color:transparent;
+    border-radius:10px;
+    margin-top: 11px;
+    margin-left: 80px;
+    color: black;
+}
+.button-delete:hover{
+    background-color: #c3513d;
+}
+
+.div-song:hover{
+    border-color: #ffffff;
+    text-decoration: none;
+    box-shadow: 0 0 10px 5px #ffffff;
+}
+.a-song {
+    color: #c3513d;
+    text-decoration: none; /* відключаємо підкреслення */
+}
+
+.a-song:hover {
+    text-decoration: none; /* відключаємо підкреслення */
+    color: #c3513d;
+}
+
+.button_add{
+    font-size: 30px;
+    color: #ffffff;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    background-color: transparent;
+    border: 2px solid white;
+    text-align: center;
+    vertical-align:center;
+}
+
+.button_add:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main-song{
+    background-color: #43297f;
+    width: 800px;
+    border-radius: 30px;
+}
+
+.input_searching {
+    background-color: #ffffff;
+    width: 500px;
+    height: 30px;
+    margin-left: 130px;
+    border-radius: 10px;
+}
+
+.p-txt-song{
+    font-family: Copperplate Gothic Light;
+    text-align: center;
+    color: #c3513d;
+    font-size: 20px;
+    text-align:left;
+    margin-left:30px;
+}
+.audio-song {
+  padding: 10px 20px;
+  font-family: Copperplate Gothic Light;
+  font-size: 16px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.img-song{
+    height: 140px;
+    width: 200px;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+
+.hr-song{
+    border: none;
+    border-top: 2px solid #e0b34d;
+    margin-left: 15px;
+}
+
+.button-change{
+    width: 250px;
+    height:60px;
+    background-color:transparent;
+    border-radius:10px;
+    color: black;
+    margin-left: 40px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.button-change:hover{
+    background-color: #e0b34d;
+}
+
+
+.input-adding{
+    background-color: #e0b34d;
+    width: 500px;
+    height: 50px;
+    margin-left: 230px;
+    border-radius: 10px;
+}
+.main-adding-div{
+    background-color: #43297f;
+    border-radius: 30px;
+}
+.button-add{
+    width: 300px;;
+    height: 60px;
+    background-color:transparent;
+    border: 1px solid #43297f;
+    border-radius:10px;
+    margin-left: 300px;
+    color: black;
+}
+.button-add:hover{
+    background-color: #b1b0f7;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 10px 5px #ffffff;
+}
+
+.input_searching {
+    background-color: #7e6d9a;
+    width: 500px;
+    height: 30px;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+
+.button_search{
+        background-color: #577590;
+        height: 30px;
+        width: 80px;
+        border-radius: 10px;
+}
+.button_default {
+    background-color: #577590;
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    margin-left: 605px;
+}
+
+.button_log{
+    width: 250px;
+    height: 50px;
+    background-color:transparent;
+    border-radius:10px;
+    color: black;
+    margin-left: 300px;
+}
+
+.button_log:hover{
+    background-color: #577590;
+}
+.button_delete_all{
+    width: 250px;
+    height: 50px;
+    background-color:transparent;
+    border-radius:10px;
+    color: black;
+}
+
+.button_delete_all:hover{
+    background-color: red;
+}
+
+.button_reg_back{
+    width: 250px;
+    height: 50px;
+    background-color:transparent;
+    border-radius:10px;
+    color: black;
+    margin-left: 50px;
+    }
+.button_reg_back:hover{
+    background-color: #577590;
+}

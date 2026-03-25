@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Аудіосервер</title>
+    <link  href="{{url_for('static', path='/audio-server.css')}}" rel="stylesheet">
+    <style>
+        .button_log{
+            width: 250px;
+            height: 50px;
+            background-color:transparent;
+            border-radius:10px;
+            color: black;
+            margin-left: 500px;
+}
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <div class = "row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <br>
+                <br>
+                <div class="div-main">
+                    <br>
+                    <h1 class = "h-txt">Music AutoGura</h1>
+                    <br>
+                    <form method="post" action="/search_song">
+                        <input class="input_searching" placeholder="Введіть назву автора" name="author_name">
+                        <button class="button_search" type = "submit">Знайти</button>
+                    </form>
+                    <a href="{{ url_for('main_page') }}"><button class="button_default">Зкинути</button></a>
+                    <br>
+                    {%for song in songs%}
+                    <br>
+                    <div class = "div-song">
+                        <a class = "a-song" href ="{{ url_for('p_song', song_id=song.id) }}">
+                            <div class="container">
+                                <div class = "row">
+                                    <div class = "col-md-8">
+                                        <p class="p-txt">{{song.author}}  ----  {{song.name}}</p>
+                                    </div>
+                                    <div class = "col-md-4">
+                                        <form method="get" action="{{ url_for('deleting_song', song_id=song.id) }}">
+                                            <button type="submit" class = "button-delete">Delete</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <br>
+                    {%endfor%}
+                    <br>
+                    <div class="row">
+                        <div class = "col-md-5"></div>
+                        <div class = "col-md-2">
+                            <a href="{{ url_for('p_adding') }}"><button class = "button_add">+</button></a>
+                        </div>
+                        <div class = "col-md-5"></div>
+                    </div>
+                    <br>
+                    <br>
+                    <a href="{{ url_for('reg_page') }}"><button class = "button_log">Log in</button></a>
+                    <br>
+                    <br>
+              </div>
+              <br>
+
+                <br>
+                <br>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</body>
+</html>
